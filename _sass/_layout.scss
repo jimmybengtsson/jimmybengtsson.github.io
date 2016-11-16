@@ -172,22 +172,7 @@
 /**
  * Page content
  */
-.page-content {
-    max-width: -webkit-calc(960px - (#{$spacing-unit} * 2));
-    max-width:         calc(960px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    min-height: 100%;
-    margin-bottom: 0;
-    @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(960px - (#{$spacing-unit}));
-        max-width:         calc(960px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
 
 .page-heading {
     font-size: 20px;
@@ -263,4 +248,56 @@
     @include media-query($on-palm) {
         padding: 0;
     }
+}
+
+
+/**
+ * Sidebar items
+ */
+
+.profile-container {
+    padding: 30px;
+
+    background: $side-bar-dark;
+    text-align: center;
+    color: #fff;
+}
+.name {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contact-list {
+    .fa {
+        margin-right: 5px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    li {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .email {
+        .fa {
+            font-size: 14px;
+        }
+    }
+}
+.container-block {
+    padding: 30px;
+
+    li {
+        padding: 10px;
+    }
+}
+.container-block-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
 }

@@ -1,1 +1,35 @@
-<div class="side-wrapper"></div>
+<div class="side-wrapper">
+    <div class="profile-container">
+        <img class="profile" src="/_img/avatar.png"/>
+        <h1 class="name">{% if site.name %}{{site.name}}{% else %}Jimmy Bengtsson{% endif %}</h1>
+        <p class="text">{{ site.description }}</p>
+    </div><!--//profile-container-->
+
+    <div class="contact-container container-block">
+        <ul class="social-media-list">
+
+            {% if site.email %}
+            <li>
+                <a href="mailto:{{ site.email }}">
+                    <i class="fa fa-envelope"></i> E-mail
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.github %}
+            <li>
+                <a href="https://github.com/{{ site.github }}">
+                    <i class="fa fa-github"></i> GitHub
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.facebook %}
+            <li>
+                <a href="https://www.facebook.com/{{ site.facebook }}">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+            </li>
+            {% endif %}
+    </div><!--//contact-container-->
+</div>
