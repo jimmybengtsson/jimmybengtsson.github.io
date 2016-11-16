@@ -1,3 +1,16 @@
+/* markers for design */
+.wrapper {
+    border: 1px solid #999;
+}
+.side-wrapper {
+    border: 1px solid red;
+}
+.page-content {
+    border: 1px solid blue;
+}
+
+
+
 /**
  * Reset some basic elements
  */
@@ -21,6 +34,11 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 
@@ -154,21 +172,21 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(960px - (#{$spacing-unit} * 2));
-    max-width:         calc(960px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    min-height: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
 }
+
 
 
 /**
@@ -177,15 +195,24 @@ pre {
 
 .side-wrapper {
     background: $side-bar-color;
-    position: absolute;
-    right: 0;
-    width: 240px;
+    float: right;
+    width: 30%;
     height: 100%;
     min-height: 800px;
     color: #fff;
     a {
         color: #fff;
     }
+    @extend %clearfix;
+
+    @include media-query($on-palm) {
+        display: none;
+    }
+
+}
+
+.content {
+    overflow: hidden;
 }
 
 
@@ -196,8 +223,8 @@ pre {
 
     &:after {
         content: "";
-        display: table;
-        clear: both;
+        display:block;
+        clear:both;
     }
 }
 
