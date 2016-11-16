@@ -97,7 +97,7 @@
 
 .site-nav1 {
     position: absolute;
-    top: 9px;
+    top: 20px;
     left: -70px;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
@@ -269,6 +269,7 @@
 .post-list {
     margin-left: 0;
     list-style: none;
+    padding-top:25px;
 
     > li {
         margin-bottom: $spacing-unit;
@@ -302,6 +303,7 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    padding-top:25px;
 }
 
 .post-title {
@@ -409,6 +411,7 @@
 
 .sidebar-latest-posts {
     padding-left: 30px;
+    padding-top: 13px;
 
     li {
         padding: 2px;
