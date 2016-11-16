@@ -10,7 +10,11 @@ url: "" # the base hostname & protocol for your site
 github:  jimmybengtsson
 facebook: krewcifix
 
-pic: avatar.png
+pic: https://avatars0.githubusercontent.com/u/21309450?v=3&s=400
 
 # Build settings
 markdown: kramdown
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+excerpt_separator: <!–break–>

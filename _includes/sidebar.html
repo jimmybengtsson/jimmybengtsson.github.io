@@ -1,6 +1,6 @@
 <div class="side-wrapper">
     <div class="profile-container">
-        <img class="profile" src="/src/_img/avatar.png"/>
+        <img class="profile" src="{% if site.pic %}{{ site.pic }}{% endif %}"/>
         <h1 class="name">{% if site.name %}{{site.name}}{% else %}Jimmy Bengtsson{% endif %}</h1>
         <p class="text">{{ site.description }}</p>
     </div><!--//profile-container-->
