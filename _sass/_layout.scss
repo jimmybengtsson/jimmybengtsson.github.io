@@ -91,7 +91,90 @@
     }
 }
 
+/**
+ * Nav on laptop
+ */
 
+.site-nav1 {
+    position: absolute;
+    top: 9px;
+    left: -70px;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    .menu-icon1 {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+
+        > svg {
+            width: 18px;
+            height: 15px;
+
+            path {
+                fill: $grey-color-dark;
+            }
+        }
+    }
+
+
+    .page-link1 {
+        display: block;
+        padding: 5px 10px;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    .trigger1 {
+        clear: both;
+        display: none;
+    }
+
+    &:hover .trigger1 {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+
+    @include media-query($on-palm) {
+        float: right;
+        line-height: 56px;
+
+        .menu-icon1 {
+            display: none;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger1 {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger1 {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+
+    }
+}
 
 /**
  * Site footer
@@ -175,7 +258,12 @@
 
 
 .page-heading {
+    font-size: 30px;
+}
+
+.page-heading1 {
     font-size: 20px;
+    margin-bottom: 1;
 }
 
 .post-list {
@@ -185,6 +273,16 @@
     > li {
         margin-bottom: $spacing-unit;
     }
+}
+
+.post-list1 {
+    margin-left: 0;
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 5px;
+
+
 }
 
 .post-meta {
@@ -307,4 +405,12 @@
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+.sidebar-latest-posts {
+    padding-left: 30px;
+
+    li {
+        padding: 2px;
+    }
 }
