@@ -8,9 +8,9 @@ date:   2016-11-18 00:44:00
 (In swedish)
 
 ## Pre-compiling CSS
-Inför den här examinationen har vi använt oss av SASS för att bygga en presentationssida.
+Inför den här examinationen har jag använt mig av SASS för att bygga en presentationssida.
 Med kursen 1ME321 (Webbteknik 1), som enda tidigare erfarenhet av HTML5 och CSS tyckte jag det var hyffsat enkelt att sätta sig in i SASS.
-Upplevdes lite rörigt i början hur arkitekturen var uppbyggd men allt eftersom man förstod det så såg jag fördelarna med att skriva koden i SASS och tror man besparar tid på det i längden eftersom det blir mindre kod att skriva (DRY - Don't repeat yourself).
+Upplevdes lite rörigt i början hur arkitekturen var uppbyggd men allt eftersom man förstod det så såg jag fördelarna med att skriva koden i SASS. Jag tror man besparar tid på det i längden eftersom det blir mindre kod att skriva (DRY - Don't repeat yourself).
 Att kunna använda sig av t.ex. fördefinierade variblar såsom färger ger tidsbesparing samt lättare att organisera sin kod.
 
 Till den är presentationssidan har jag använt mig utav bl.a. :
@@ -28,7 +28,7 @@ Nackdelarna är bl.a. att det blir svårare att debugga sin kod, upplevs rörigt
 <!--break-->
 
 ## Static site generators
-Jekyll är en SSG som passar bra till Github Pages så därför använde vi oss av den för att koda våran webbsida.
+Jekyll är en SSG som passar bra till Github Pages så därför använde vi oss av den i kursen för att koda våran webbsida.
 Genom att utgå från [Jekyll's template](https://1dv022.github.io) gick det snabbt att komma igång. Mallen var till stor hjälp för mig att förstå arkitekturen.
 Men nästa sida jag gör med hjälp av Jekyll så kommer jag nog ta bort all SASS-kod och börja från scratch för jag stötte på vissa buggar när jag ändrade till den layout jag ville ha.
 
@@ -45,7 +45,7 @@ Disallow: /
 {% endhighlight %}
 
 Jag valde att förbjuda alla webrobotar för att göra min blogg så privat som möjligt eftersom jag nu endast kommer använda bloggen till skolrelaterade saker.
-Men om jag i framtiden vill ha den mer bublik är det lätt att justera.
+Men om jag i framtiden vill ha den mer publik är det lätt att justera.
 
 Läs mer på [robotstxt.org](https://robotstxt.org).
 
