@@ -137,6 +137,12 @@
     .trigger1 {
         clear: both;
         display: none;
+
+        ul {
+            list-style-type: none;
+            margin-left: 10px;
+            padding-right: 10px;
+        }
     }
 
     &:hover .trigger1 {
@@ -362,9 +368,10 @@
     background: $side-bar-dark;
     text-align: center;
     color: #fff;
+    font-size: 17px;
 }
 .name {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 30px;

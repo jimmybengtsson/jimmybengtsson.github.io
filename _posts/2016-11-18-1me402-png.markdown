@@ -1,0 +1,15 @@
+---
+layout: post
+comments: true
+title:  "Vector graphics from 1ME402"
+date:   2016-11-18 00:42:00
+---
+
+Some vector-png's I've made in Illustrator for 1ME402 course.
+
+![alt text](https://homepage.lnu.se/student/jb223pu/kurs/1me402/MeAndMyself.png)
+
+<!--break-->
+
+![alt text](https://homepage.lnu.se/student/jb223pu/kurs/1me402/TopGame.png)
+

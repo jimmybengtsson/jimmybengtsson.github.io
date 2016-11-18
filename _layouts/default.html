@@ -21,11 +21,19 @@
               </a>
 
               <div class="trigger1">
-                  {% for page in site.pages %}
-                  {% if page.title %}
-                  <a class="page-link1" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                  {% endif %}
-                  {% endfor %}
+                  <nav>
+                      <ul>
+                          {% for link in site.data.navigation %}
+                          {% assign current = nil %}
+                          {% if page.url contains link.url %}
+                          {% assign current = 'active' %}
+                          {% endif %}
+                          <li class="{{ current }}">
+                              <a href="{{ link.url }}">{{ link.title }}</a>
+                          </li>
+                          {% endfor %}
+                      </ul>
+                  </nav>
               </div>
           </nav>
 
@@ -59,7 +67,7 @@
     </div>
 
     {% include footer.html %}
-  
+
 
   </body>
 
